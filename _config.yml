@@ -10,7 +10,7 @@
 title                    : "Shida Wang"
 title_separator          : "-"
 name                     : &name "Shida Wang"
-description              : &description "personal description"
+description              : &description "I can do all things."
 url                      : https://ShidaWang02.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ShidaWang02/ShidaWang02.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Shida Wang"
   avatar           : "avatar.jpeg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "I can do all things."
   location         : "Anhui, China"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
