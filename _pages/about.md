@@ -28,7 +28,7 @@ Hi 👋, I'm **Shida Wang(王世炟)**, an undergraduate in [University of Scien
 - *2023* Soong Ching Ling Future Scholarship
 - *2022* Third Prize in the Contemporary Undergraduate Mathematical Contest in Modeling, Anhui Province, China
 - *2019* First Prize, National High School Mathematics Competition, Jilin Province, China
-- *2019* First Prize, National High School Physics Competition, Jilin Province, China
+- *2019* Second Prize, National High School Physics Competition, Jilin Province, China
 - *2019* Second Prize, China Chemistry Olympiad (Preliminary Round), Jilin Province, China
 
 
