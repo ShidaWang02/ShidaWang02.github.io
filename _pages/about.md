@@ -11,11 +11,13 @@ redirect_from:
 # 😄About me
 ---
 
-Hi 👋, I'm **Shida Wang(王世炟)**, an undergraduate in [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/), [School of Big Data](http://sds.ustc.edu.cn/main.htm). I am expected to become a graduate student in 2024 under the supervision of [Prof. Linli Xu](http://staff.ustc.edu.cn/~linlixu/) in USTC. My current research focuses on diffusion models and image editing. Additionally, I am also interested in multimodal analysis and LLMs.
+Hi 👋, I'm **Shida Wang(王世炟)**, a postgraduate in [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/), [School of Big Data](http://sds.ustc.edu.cn/main.htm). I am now a graduate student under the supervision of [Prof. Linli Xu](http://staff.ustc.edu.cn/~linlixu/) in USTC. My current research focuses on diffusion models and image editing. Additionally, I am also interested in multimodal analysis and LLMs.
 
 # 📖 Educations
 ---
-- *Sept. 2021 - Present*, Bachelor, School of Big Data, USTC, Hefei, China.
+- *Sept. 2024 - Present*, Postgraduate, School of Artificial Intelligence and Data Science, USTC, Hefei, China.
+
+- *Sept. 2021 - July 2024*, Bachelor, School of Big Data, USTC, Hefei, China.
 
 - *Sept. 2020 - July 2021*, Bachelor, School of Management, USTC, Hefei, China.
 
