@@ -405,6 +405,31 @@ function toggleAbstract(btn) {
 
 <div class="pub-list">
 
+  <!-- DTC -->
+  <div class="pub-card">
+    <div class="pub-venue-badge">
+      <span class="pub-venue-label venue-arxiv">arXiv</span>
+      <span class="pub-year">2025</span>
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">
+        Dynamic Token Compression for Efficient Video Understanding through Reinforcement Learning
+      </div>
+      <div class="pub-authors">
+        <span class="me">Shida Wang*</span>,&nbsp;Yongxiang Hua*,&nbsp;Zhou Tao,&nbsp;Haoyu Cao,&nbsp;Linli Xu
+        <span style="font-size:0.84em;color:#999;">&nbsp;(* equal contribution)</span>
+      </div>
+      <div class="pub-venue-line">Preprint, 2025</div>
+      <div class="pub-topics">
+        <span class="pub-tag">Video Understanding</span>
+        <span class="pub-tag">Token Compression</span>
+        <span class="pub-tag">Reinforcement Learning</span>
+        <span class="pub-tag">Efficient Inference</span>
+      </div>
+      <div style="font-size:0.82em;color:#999;font-style:italic;margin-top:0.3em;">📌 Paper coming soon</div>
+    </div>
+  </div>
+
   <!-- TableMix -->
   <div class="pub-card">
     <div class="pub-venue-badge">
