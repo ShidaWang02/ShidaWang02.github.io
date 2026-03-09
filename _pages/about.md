@@ -346,7 +346,7 @@ function toggleAbstract(btn) {
      BIO
 ════════════════════════════════════════════════════════ -->
 <div class="bio-block">
-  I am <strong>Shida Wang (王世炟)</strong>, a first-year M.S. student at the
+  I am <strong>Shida Wang (王世炟)</strong>, an M.S. student at the
   <a href="http://sds.ustc.edu.cn/main.htm" target="_blank">School of Artificial Intelligence and Data Science</a>,
   <a href="https://www.ustc.edu.cn/" target="_blank">University of Science and Technology of China (USTC)</a>,
   advised by <a href="http://staff.ustc.edu.cn/~linlixu/" target="_blank">Prof. Linli Xu</a>.
@@ -563,7 +563,6 @@ function toggleAbstract(btn) {
   <div class="edu-item">
     <div class="edu-dot-col">
       <div class="edu-dot"></div>
-      <div class="edu-line"></div>
     </div>
     <div class="edu-body">
       <div class="edu-period">Sept. 2020 – July 2021</div>
@@ -575,16 +574,7 @@ function toggleAbstract(btn) {
     </div>
   </div>
 
-  <div class="edu-item">
-    <div class="edu-dot-col">
-      <div class="edu-dot"></div>
-    </div>
-    <div class="edu-body">
-      <div class="edu-period">Sept. 2017 – July 2020</div>
-      <div class="edu-degree">High School</div>
-      <div class="edu-school">Siping No.1 High School, Siping, China</div>
-    </div>
-  </div>
+
 
 </div>
 
