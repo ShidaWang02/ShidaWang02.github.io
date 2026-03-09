@@ -408,8 +408,8 @@ function toggleAbstract(btn) {
   <!-- DTC -->
   <div class="pub-card">
     <div class="pub-venue-badge">
-      <span class="pub-venue-label venue-cvpr">CVPR<br>2026</span>
-      <span class="pub-year">2025</span>
+      <span class="pub-venue-label venue-arxiv">arXiv</span>
+      <span class="pub-year">2026</span>
     </div>
     <div class="pub-content">
       <div class="pub-title">
@@ -419,7 +419,7 @@ function toggleAbstract(btn) {
         <span class="me">Shida Wang*</span>,&nbsp;Yongxiang Hua*,&nbsp;Zhou Tao,&nbsp;Haoyu Cao,&nbsp;Linli Xu
         <span style="font-size:0.84em;color:#999;">&nbsp;(* equal contribution)</span>
       </div>
-      <div class="pub-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</div>
+      <div class="pub-venue-line">Preprint, 2026</div>
       <div class="pub-topics">
         <span class="pub-tag">Video Understanding</span>
         <span class="pub-tag">Token Compression</span>
