@@ -405,6 +405,29 @@ function toggleAbstract(btn) {
 
 <div class="pub-list">
 
+  <!-- TableMix -->
+  <div class="pub-card">
+    <div class="pub-venue-badge">
+      <span class="pub-venue-label venue-cvpr">CVPR<br>2026</span>
+      <span class="pub-year">2025</span>
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">
+        TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
+      </div>
+      <div class="pub-authors">
+        Chaohu Liu,&nbsp;<span class="me">Shida Wang</span>,&nbsp;Yubo Wang,&nbsp;Linli Xu
+      </div>
+      <div class="pub-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</div>
+      <div class="pub-topics">
+        <span class="pub-tag">Multimodal LLM</span>
+        <span class="pub-tag">Table Reasoning</span>
+        <span class="pub-tag">Data-Centric AI</span>
+      </div>
+      <div style="font-size:0.82em;color:#999;font-style:italic;margin-top:0.3em;">📌 Paper coming soon</div>
+    </div>
+  </div>
+
   <!-- DiG -->
   <div class="pub-card">
     <div class="pub-venue-badge">
