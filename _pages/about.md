@@ -429,7 +429,9 @@ function toggleAbstract(btn) {
         <span class="pub-tag">Efficient Inference</span>
       </div>
       <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
-      <div class="pub-abstract">Coming soon.</div>
+      <div class="pub-abstract">
+        Multimodal Large Language Models have demonstrated remarkable capabilities in video understanding, yet face prohibitive computational costs and performance degradation from "context rot" due to massive visual token redundancy. Existing compression strategies typically rely on heuristics or fixed transformations that are often decoupled from the downstream task objectives, limiting their adaptability and effectiveness. To address this, we propose <strong>SCORE</strong> (Surprise-augmented token COmpression via REinforcement learning), a unified framework that learns an adaptive token compression policy. SCORE introduces a lightweight policy network conditioned on a surprise-augmented state representation that incorporates inter-frame residuals to explicitly capture temporal dynamics and motion saliency. We optimize this policy using a group-wise reinforcement learning scheme with a split-advantage estimator, stabilized by a two-stage curriculum transferring from static pseudo-videos to real dynamic videos. Extensive experiments demonstrate that SCORE significantly outperforms state-of-the-art baselines, achieving a <strong>16x prefill speedup</strong> while preserving <strong>99.5% of original performance</strong> at a 10% retention ratio.
+      </div>
       <div class="pub-links">
         <a class="pub-btn pub-btn-arxiv" href="https://arxiv.org/abs/2603.26365" target="_blank">📄 arXiv</a>
         <a class="pub-btn pub-btn-pdf"   href="https://arxiv.org/pdf/2603.26365"  target="_blank">📑 PDF</a>
