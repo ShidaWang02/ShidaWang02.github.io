@@ -413,20 +413,27 @@ function toggleAbstract(btn) {
     </div>
     <div class="pub-content">
       <div class="pub-title">
-        Dynamic Token Compression for Efficient Video Understanding through Reinforcement Learning
+        <a href="https://arxiv.org/abs/2603.26365" target="_blank">
+          Dynamic Token Compression for Efficient Video Understanding through Reinforcement Learning
+        </a>
       </div>
       <div class="pub-authors">
         <span class="me">Shida Wang*</span>,&nbsp;Yongxiang Hua*,&nbsp;Zhou Tao,&nbsp;Haoyu Cao,&nbsp;Linli Xu
         <span style="font-size:0.84em;color:#999;">&nbsp;(* equal contribution)</span>
       </div>
-      <div class="pub-venue-line">Preprint, 2026</div>
+      <div class="pub-venue-line">arXiv preprint arXiv:2603.26365, 2026</div>
       <div class="pub-topics">
         <span class="pub-tag">Video Understanding</span>
         <span class="pub-tag">Token Compression</span>
         <span class="pub-tag">Reinforcement Learning</span>
         <span class="pub-tag">Efficient Inference</span>
       </div>
-      <div style="font-size:0.82em;color:#999;font-style:italic;margin-top:0.3em;">📌 Paper coming soon</div>
+      <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
+      <div class="pub-abstract">Coming soon.</div>
+      <div class="pub-links">
+        <a class="pub-btn pub-btn-arxiv" href="https://arxiv.org/abs/2603.26365" target="_blank">📄 arXiv</a>
+        <a class="pub-btn pub-btn-pdf"   href="https://arxiv.org/pdf/2603.26365"  target="_blank">📑 PDF</a>
+      </div>
     </div>
   </div>
 
