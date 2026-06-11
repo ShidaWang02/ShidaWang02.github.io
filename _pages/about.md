@@ -588,6 +588,45 @@ function toggleAbstract(btn) {
 </div>
 
 <!-- ═══════════════════════════════════════════════════════
+     INTERNSHIPS
+════════════════════════════════════════════════════════ -->
+<div class="section-header">
+  <h2>Internships</h2>
+  <div class="section-line"></div>
+</div>
+
+<div class="edu-timeline">
+
+  <div class="edu-item">
+    <div class="edu-dot-col">
+      <div class="edu-dot"></div>
+      <div class="edu-line"></div>
+    </div>
+    <div class="edu-body">
+      <div class="edu-period">June 2026 – Present</div>
+      <div class="edu-degree">dots · Ace Top Intern</div>
+      <div class="edu-school">
+        Xiaohongshu (RED) &nbsp;·&nbsp; Shanghai, China
+      </div>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-dot-col">
+      <div class="edu-dot"></div>
+    </div>
+    <div class="edu-body">
+      <div class="edu-period">Oct. 2025 – May 2026</div>
+      <div class="edu-degree">Research Intern</div>
+      <div class="edu-school">
+        Tencent Youtu Lab &nbsp;·&nbsp; Hefei, China
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
      HONORS & AWARDS
 ════════════════════════════════════════════════════════ -->
 <div class="section-header">
