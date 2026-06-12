@@ -29,7 +29,7 @@ redirect_from:
 .academic-home a:hover { text-decoration: underline; }
 
 /* ── Section headers ─────────────────────────────────────────── */
-.section-header { margin: 2.8em 0 1.2em 0; }
+.section-header { margin: 2.6em 0 1.1em 0; }
 .section-header h2 {
   font-size: 0.74em;
   font-weight: 700;
@@ -43,11 +43,20 @@ redirect_from:
 }
 
 /* ── Bio ─────────────────────────────────────────────────────── */
-.bio-block {
-  color: var(--body);
-  padding: 0.4em 0 0.2em 0;
-}
+.bio-block { color: var(--body); padding: 0.4em 0 0.2em 0; }
 .bio-block strong { color: var(--ink); font-weight: 650; }
+
+/* ── News ────────────────────────────────────────────────────── */
+.news-list { margin-top: 0.3em; }
+.news-item { display: flex; gap: 1em; padding: 0.4em 0; font-size: 0.92em; }
+.news-date {
+  color: var(--muted);
+  min-width: 82px;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+.news-body { color: var(--body); }
+.news-body strong { color: var(--ink); font-weight: 650; }
 
 /* ── Research interests ──────────────────────────────────────── */
 .tag-row { display: flex; flex-wrap: wrap; gap: 0.55em; margin-top: 0.2em; }
@@ -60,9 +69,37 @@ redirect_from:
   background: var(--subtle);
 }
 
-/* ── Publications ────────────────────────────────────────────── */
-.pub-item { padding: 1.25em 0; border-top: 1px solid var(--line); }
+/* ── Publications (thumbnail + info, two-column) ─────────────── */
+.pub-item {
+  display: flex;
+  gap: 1.25em;
+  align-items: flex-start;
+  padding: 1.4em 0;
+  border-top: 1px solid var(--line);
+}
 .pub-item:first-child { border-top: none; padding-top: 0.4em; }
+.pub-thumb {
+  width: 168px;
+  flex-shrink: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--subtle);
+}
+.pub-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pub-thumb.ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #eef1fb, #f7f8fc);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.92em;
+  letter-spacing: 0.04em;
+}
+.pub-info { flex: 1; min-width: 0; }
 .pub-venue {
   font-size: 0.72em;
   font-weight: 700;
@@ -80,28 +117,18 @@ redirect_from:
 }
 .pub-title a { color: inherit; }
 .pub-title a:hover { color: var(--accent); }
-.pub-authors { font-size: 0.9em; color: var(--body); margin-bottom: 0.1em; }
+.pub-authors { font-size: 0.9em; color: var(--body); margin-bottom: 0.15em; }
 .pub-authors .me { font-weight: 700; color: var(--ink); }
-.pub-note { font-size: 0.85em; color: var(--muted); margin-top: 0.35em; }
+.pub-tldr { font-size: 0.86em; color: var(--muted); font-style: italic; margin-top: 0.1em; }
 .pub-abstract-toggle {
-  font-size: 0.82em;
-  color: var(--accent);
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
-  margin-top: 0.45em;
-  font-family: inherit;
+  font-size: 0.82em; color: var(--accent); cursor: pointer;
+  background: none; border: none; padding: 0; margin-top: 0.45em; font-family: inherit;
 }
 .pub-abstract-toggle:hover { text-decoration: underline; }
 .pub-abstract {
   display: none;
-  font-size: 0.88em;
-  color: var(--body);
-  line-height: 1.7;
-  border-left: 2px solid var(--line);
-  padding: 0.3em 0 0.3em 1em;
-  margin: 0.6em 0 0.2em 0;
+  font-size: 0.88em; color: var(--body); line-height: 1.7;
+  border-left: 2px solid var(--line); padding: 0.3em 0 0.3em 1em; margin: 0.6em 0 0.2em 0;
 }
 .pub-abstract.open { display: block; }
 .pub-abstract strong { color: var(--ink); }
@@ -113,10 +140,7 @@ redirect_from:
 .tl-item { display: flex; gap: 1em; padding-bottom: 1.3em; }
 .tl-item:last-child { padding-bottom: 0.2em; }
 .tl-rail { display: flex; flex-direction: column; align-items: center; padding-top: 0.5em; }
-.tl-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--accent); flex-shrink: 0;
-}
+.tl-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
 .tl-line { width: 1px; flex: 1; min-height: 26px; background: var(--line); margin-top: 6px; }
 .tl-item:last-child .tl-line { display: none; }
 .tl-body { flex: 1; }
@@ -125,10 +149,7 @@ redirect_from:
 .tl-org { font-size: 0.88em; color: var(--body); }
 
 /* ── Awards ──────────────────────────────────────────────────── */
-.award-row {
-  display: flex; align-items: baseline; gap: 1em;
-  padding: 0.6em 0; border-top: 1px solid var(--line);
-}
+.award-row { display: flex; align-items: baseline; gap: 1em; padding: 0.6em 0; border-top: 1px solid var(--line); }
 .award-row:first-child { border-top: none; }
 .award-year { font-size: 0.82em; color: var(--muted); min-width: 38px; flex-shrink: 0; }
 .award-name { font-size: 0.92em; color: var(--body); line-height: 1.5; }
@@ -136,6 +157,8 @@ redirect_from:
 
 @media (max-width: 600px) {
   .academic-home { font-size: 15px; }
+  .pub-item { flex-direction: column; gap: 0.8em; }
+  .pub-thumb { width: 100%; max-width: 280px; }
 }
 </style>
 
@@ -160,6 +183,31 @@ function toggleAbstract(btn) {
   and trustworthy vision-language systems. Outside research, I enjoy basketball and R&amp;B music.
 </div>
 
+<!-- ═══════════════ NEWS ═══════════════ -->
+<div class="section-header"><h2>News</h2></div>
+<div class="news-list">
+  <div class="news-item">
+    <div class="news-date">Jun 2026</div>
+    <div class="news-body">Started as <strong>dots · Ace Top Intern</strong> at Xiaohongshu (RED), Shanghai.</div>
+  </div>
+  <div class="news-item">
+    <div class="news-date">Mar 2026</div>
+    <div class="news-body">Released <strong>SCORE</strong> (Dynamic Token Compression for video) on arXiv.</div>
+  </div>
+  <div class="news-item">
+    <div class="news-date">Feb 2026</div>
+    <div class="news-body">Two papers (<strong>TableMix</strong>, <strong>DiG</strong>) accepted to <strong>CVPR 2026</strong>.</div>
+  </div>
+  <div class="news-item">
+    <div class="news-date">Oct 2025</div>
+    <div class="news-body">Joined <strong>Tencent Youtu Lab</strong> as a Research Intern.</div>
+  </div>
+  <div class="news-item">
+    <div class="news-date">Aug 2025</div>
+    <div class="news-body">Released <strong>FPEdit</strong> (robust LLM fingerprinting) on arXiv.</div>
+  </div>
+</div>
+
 <!-- ═══════════════ RESEARCH INTERESTS ═══════════════ -->
 <div class="section-header"><h2>Research Interests</h2></div>
 <div class="tag-row">
@@ -176,84 +224,100 @@ function toggleAbstract(btn) {
 
   <!-- SCORE -->
   <div class="pub-item">
-    <div class="pub-venue">arXiv 2026</div>
-    <div class="pub-title">
-      <a href="https://arxiv.org/abs/2603.26365" target="_blank">
-        Dynamic Token Compression for Efficient Video Understanding through Reinforcement Learning
-      </a>
-    </div>
-    <div class="pub-authors">
-      <span class="me">Shida Wang*</span>, Yongxiang Hua*, Zhou Tao, Haoyu Cao, Linli Xu
-      <span style="color:var(--muted);">(* equal contribution)</span>
-    </div>
-    <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
-    <div class="pub-abstract">
-      Multimodal Large Language Models have demonstrated remarkable capabilities in video understanding, yet face prohibitive computational costs and performance degradation from "context rot" due to massive visual token redundancy. Existing compression strategies typically rely on heuristics or fixed transformations that are often decoupled from the downstream task objectives. We propose <strong>SCORE</strong> (Surprise-augmented token COmpression via REinforcement learning), a unified framework that learns an adaptive token compression policy. SCORE introduces a lightweight policy network conditioned on a surprise-augmented state representation that incorporates inter-frame residuals to capture temporal dynamics and motion saliency, optimized via a group-wise reinforcement learning scheme with a split-advantage estimator and a static→real two-stage curriculum. SCORE achieves a <strong>16× prefill speedup</strong> while preserving <strong>99.5% of original performance</strong> at a 10% retention ratio.
-    </div>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2603.26365" target="_blank">arXiv</a>
-      <a href="https://arxiv.org/pdf/2603.26365" target="_blank">PDF</a>
+    <div class="pub-thumb"><img src="/images/pubs/score.png" alt="SCORE teaser"></div>
+    <div class="pub-info">
+      <div class="pub-venue">arXiv 2026</div>
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2603.26365" target="_blank">
+          Dynamic Token Compression for Efficient Video Understanding through Reinforcement Learning
+        </a>
+      </div>
+      <div class="pub-authors">
+        <span class="me">Shida Wang*</span>, Yongxiang Hua*, Zhou Tao, Haoyu Cao, Linli Xu
+        <span style="color:var(--muted);">(* equal contribution)</span>
+      </div>
+      <div class="pub-tldr">An RL-learned policy compresses video tokens for 16× prefill speedup at ~99.5% performance.</div>
+      <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
+      <div class="pub-abstract">
+        Multimodal Large Language Models have demonstrated remarkable capabilities in video understanding, yet face prohibitive computational costs and performance degradation from "context rot" due to massive visual token redundancy. Existing compression strategies typically rely on heuristics or fixed transformations that are often decoupled from the downstream task objectives. We propose <strong>SCORE</strong> (Surprise-augmented token COmpression via REinforcement learning), a unified framework that learns an adaptive token compression policy. SCORE introduces a lightweight policy network conditioned on a surprise-augmented state representation that incorporates inter-frame residuals to capture temporal dynamics and motion saliency, optimized via a group-wise reinforcement learning scheme with a split-advantage estimator and a static→real two-stage curriculum. SCORE achieves a <strong>16× prefill speedup</strong> while preserving <strong>99.5% of original performance</strong> at a 10% retention ratio.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2603.26365" target="_blank">arXiv</a>
+        <a href="https://arxiv.org/pdf/2603.26365" target="_blank">PDF</a>
+      </div>
     </div>
   </div>
 
   <!-- TableMix -->
   <div class="pub-item">
-    <div class="pub-venue">CVPR 2026</div>
-    <div class="pub-title">
-      TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
+    <div class="pub-thumb ph">CVPR<br>2026</div>
+    <div class="pub-info">
+      <div class="pub-venue">CVPR 2026</div>
+      <div class="pub-title">
+        TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
+      </div>
+      <div class="pub-authors">
+        Chaohu Liu, <span class="me">Shida Wang</span>, Yubo Wang, Linli Xu
+      </div>
+      <div class="pub-tldr">A data-centric augmentation strategy that boosts multimodal table reasoning in MLLMs.</div>
+      <div class="pub-tldr" style="color:var(--muted);font-style:normal;">📌 Paper coming soon</div>
     </div>
-    <div class="pub-authors">
-      Chaohu Liu, <span class="me">Shida Wang</span>, Yubo Wang, Linli Xu
-    </div>
-    <div class="pub-note">📌 Paper coming soon</div>
   </div>
 
   <!-- DiG -->
   <div class="pub-item">
-    <div class="pub-venue">CVPR 2026</div>
-    <div class="pub-title">
-      <a href="https://arxiv.org/abs/2512.12633" target="_blank">
-        DiG: Differential Grounding for Enhancing Fine-Grained Perception in Multimodal Large Language Model
-      </a>
-    </div>
-    <div class="pub-authors">
-      Zhou Tao*, <span class="me">Shida Wang*</span>, Yongxiang Hua, Haoyu Cao, Linli Xu
-      <span style="color:var(--muted);">(* equal contribution)</span>
-    </div>
-    <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
-    <div class="pub-abstract">
-      Multimodal Large Language Models (MLLMs) have achieved impressive performance across vision-language tasks, yet their fine-grained visual perception and precise spatial reasoning remain limited. We introduce <strong>DiG (Differential Grounding)</strong>, a proxy task framework where MLLMs learn fine-grained perception by identifying and localizing <em>all</em> differences between similar image pairs, without prior knowledge of the number of differences. To support scalable training, we develop an automated 3D-rendering-based data generation pipeline and employ curriculum learning for stable optimization. DiG significantly improves performance on RefCOCO, RefCOCO+, RefCOCOg, and general multimodal perception benchmarks.
-    </div>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2512.12633" target="_blank">arXiv</a>
-      <a href="https://arxiv.org/pdf/2512.12633" target="_blank">PDF</a>
+    <div class="pub-thumb"><img src="/images/pubs/dig.png" alt="DiG teaser"></div>
+    <div class="pub-info">
+      <div class="pub-venue">CVPR 2026</div>
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2512.12633" target="_blank">
+          DiG: Differential Grounding for Enhancing Fine-Grained Perception in Multimodal Large Language Model
+        </a>
+      </div>
+      <div class="pub-authors">
+        Zhou Tao*, <span class="me">Shida Wang*</span>, Yongxiang Hua, Haoyu Cao, Linli Xu
+        <span style="color:var(--muted);">(* equal contribution)</span>
+      </div>
+      <div class="pub-tldr">MLLMs learn fine-grained perception by localizing all differences between similar image pairs.</div>
+      <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
+      <div class="pub-abstract">
+        Multimodal Large Language Models (MLLMs) have achieved impressive performance across vision-language tasks, yet their fine-grained visual perception and precise spatial reasoning remain limited. We introduce <strong>DiG (Differential Grounding)</strong>, a proxy task framework where MLLMs learn fine-grained perception by identifying and localizing <em>all</em> differences between similar image pairs, without prior knowledge of the number of differences. To support scalable training, we develop an automated 3D-rendering-based data generation pipeline and employ curriculum learning for stable optimization. DiG significantly improves performance on RefCOCO, RefCOCO+, RefCOCOg, and general multimodal perception benchmarks.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2512.12633" target="_blank">arXiv</a>
+        <a href="https://arxiv.org/pdf/2512.12633" target="_blank">PDF</a>
+      </div>
     </div>
   </div>
 
   <!-- FPEdit -->
   <div class="pub-item">
-    <div class="pub-venue">arXiv 2025</div>
-    <div class="pub-title">
-      <a href="https://arxiv.org/abs/2508.02092" target="_blank">
-        FPEdit: Robust LLM Fingerprinting through Localized Parameter Editing
-      </a>
-    </div>
-    <div class="pub-authors">
-      <span class="me">Shida Wang</span>, Chaohu Liu, Yubo Wang, Linli Xu
-    </div>
-    <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
-    <div class="pub-abstract">
-      We introduce <strong>FPEdit</strong>, a framework that leverages knowledge editing to inject semantically coherent natural language fingerprints through sparse, targeted modifications to model weights. Our Promote-Suppress Value Vector Optimization achieves 95–100% fingerprint retention under full-parameter fine-tuning and parameter-efficient adaptation, remaining robust under quantization, pruning, and stochastic decoding. FPEdit embeds 10 fingerprint pairs into LLaMA2-7B in under 2 minutes using less than 30 GB GPU memory.
-    </div>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2508.02092" target="_blank">arXiv</a>
-      <a href="https://arxiv.org/pdf/2508.02092" target="_blank">PDF</a>
+    <div class="pub-thumb"><img src="/images/pubs/fpedit.png" alt="FPEdit teaser"></div>
+    <div class="pub-info">
+      <div class="pub-venue">arXiv 2025</div>
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2508.02092" target="_blank">
+          FPEdit: Robust LLM Fingerprinting through Localized Parameter Editing
+        </a>
+      </div>
+      <div class="pub-authors">
+        <span class="me">Shida Wang</span>, Chaohu Liu, Yubo Wang, Linli Xu
+      </div>
+      <div class="pub-tldr">Knowledge-editing injects robust natural-language fingerprints into LLMs in under 2 minutes.</div>
+      <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
+      <div class="pub-abstract">
+        We introduce <strong>FPEdit</strong>, a framework that leverages knowledge editing to inject semantically coherent natural language fingerprints through sparse, targeted modifications to model weights. Our Promote-Suppress Value Vector Optimization achieves 95–100% fingerprint retention under full-parameter fine-tuning and parameter-efficient adaptation, remaining robust under quantization, pruning, and stochastic decoding. FPEdit embeds 10 fingerprint pairs into LLaMA2-7B in under 2 minutes using less than 30 GB GPU memory.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2508.02092" target="_blank">arXiv</a>
+        <a href="https://arxiv.org/pdf/2508.02092" target="_blank">PDF</a>
+      </div>
     </div>
   </div>
 
 </div>
 
-<!-- ═══════════════ EXPERIENCE / EDUCATION ═══════════════ -->
+<!-- ═══════════════ INTERNSHIPS ═══════════════ -->
 <div class="section-header"><h2>Internships</h2></div>
 <div class="tl">
   <div class="tl-item">
@@ -274,6 +338,7 @@ function toggleAbstract(btn) {
   </div>
 </div>
 
+<!-- ═══════════════ EDUCATION ═══════════════ -->
 <div class="section-header"><h2>Education</h2></div>
 <div class="tl">
   <div class="tl-item">
@@ -281,9 +346,7 @@ function toggleAbstract(btn) {
     <div class="tl-body">
       <div class="tl-period">Sept. 2024 – Present</div>
       <div class="tl-role">M.S. in Artificial Intelligence</div>
-      <div class="tl-org">
-        <a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei
-      </div>
+      <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei</div>
     </div>
   </div>
   <div class="tl-item">
@@ -291,9 +354,7 @@ function toggleAbstract(btn) {
     <div class="tl-body">
       <div class="tl-period">Sept. 2021 – July 2024</div>
       <div class="tl-role">B.S. in Artificial Intelligence</div>
-      <div class="tl-org">
-        <a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei
-      </div>
+      <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei</div>
     </div>
   </div>
   <div class="tl-item">
@@ -301,9 +362,7 @@ function toggleAbstract(btn) {
     <div class="tl-body">
       <div class="tl-period">Sept. 2020 – July 2021</div>
       <div class="tl-role">B.S. in Management (transferred)</div>
-      <div class="tl-org">
-        <a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Management, Hefei
-      </div>
+      <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Management, Hefei</div>
     </div>
   </div>
 </div>

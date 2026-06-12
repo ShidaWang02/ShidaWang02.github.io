@@ -35,4 +35,87 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
+<!-- ── Dark mode ──────────────────────────────────────────────── -->
+<style>
+/* Floating toggle button */
+#theme-toggle {
+  position: fixed; right: 18px; bottom: 18px; z-index: 9999;
+  width: 42px; height: 42px; border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #ffffff; color: #333; cursor: pointer;
+  font-size: 18px; line-height: 1; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15); transition: transform 0.15s, background 0.2s, color 0.2s;
+}
+#theme-toggle:hover { transform: scale(1.08); }
+
+/* Dark theme overrides for the Minimal-Mistakes chrome + content */
+body.dark-mode {
+  --ink: #f0f2f5; --body: #c9cdd6; --muted: #8b909b;
+  --accent: #93a4ff; --line: #2c2f37; --subtle: #1e2026;
+  background-color: #16181d;
+}
+body.dark-mode #theme-toggle { background: #23262d; color: #ffd86b; border-color: rgba(255,255,255,0.15); }
+
+body.dark-mode .masthead { background: #16181d; border-bottom: 1px solid #2c2f37; }
+body.dark-mode .masthead__inner-wrap,
+body.dark-mode .greedy-nav { background: #16181d; }
+body.dark-mode .greedy-nav,
+body.dark-mode .greedy-nav a,
+body.dark-mode .site-title,
+body.dark-mode .masthead a { color: #d6dae3; }
+body.dark-mode .greedy-nav button { background: #23262d; }
+
+body.dark-mode .page__content,
+body.dark-mode .page,
+body.dark-mode .archive { color: #c9cdd6; }
+body.dark-mode .page__content h1,
+body.dark-mode .page__content h2,
+body.dark-mode .page__content h3,
+body.dark-mode .page__title,
+body.dark-mode .archive__item-title { color: #f0f2f5; }
+body.dark-mode a { color: #93a4ff; }
+
+/* Sidebar author profile */
+body.dark-mode .author__name { color: #f0f2f5; }
+body.dark-mode .author__bio,
+body.dark-mode .author__urls a,
+body.dark-mode .author__urls .icon { color: #c9cdd6; }
+body.dark-mode .author__urls.social-icons a { color: #c9cdd6; }
+body.dark-mode .author__urls li { border: none; }
+
+/* Footer */
+body.dark-mode .page__footer { background: #1e2026; color: #9094a0; }
+body.dark-mode .page__footer a,
+body.dark-mode .page__footer-follow a { color: #93a4ff; }
+
+/* Cards/borders inside content */
+body.dark-mode .tag { background: #1e2026; border-color: #2c2f37; }
+body.dark-mode .pub-thumb { background: #1e2026; border-color: #2c2f37; }
+body.dark-mode .pub-thumb.ph { background: linear-gradient(135deg, #232742, #1b1d24); color: #93a4ff; }
+
+html, body { transition: background-color 0.25s ease, color 0.25s ease; }
+</style>
+<script>
+(function () {
+  function init() {
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var mode = saved || (prefersDark ? 'dark' : 'light');
+    if (mode === 'dark') document.body.classList.add('dark-mode');
+    var btn = document.createElement('button');
+    btn.id = 'theme-toggle';
+    btn.setAttribute('aria-label', 'Toggle dark mode');
+    btn.innerHTML = (mode === 'dark') ? '☀' : '☾';
+    btn.addEventListener('click', function () {
+      var dark = document.body.classList.toggle('dark-mode');
+      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+      btn.innerHTML = dark ? '☀' : '☾';
+    });
+    document.body.appendChild(btn);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
 <!-- end custom head snippets -->
