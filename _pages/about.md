@@ -254,13 +254,18 @@ function toggleAbstract(btn) {
     <div class="pub-info">
       <div class="pub-venue">CVPR 2026</div>
       <div class="pub-title">
-        TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
+        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.pdf" target="_blank">
+          TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
+        </a>
       </div>
       <div class="pub-authors">
         Chaohu Liu, <span class="me">Shida Wang</span>, Yubo Wang, Linli Xu
       </div>
       <div class="pub-tldr">A data-centric augmentation strategy that boosts multimodal table reasoning in MLLMs.</div>
-      <div class="pub-tldr" style="color:var(--muted);font-style:normal;">📌 Paper coming soon</div>
+      <div class="pub-links">
+        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.pdf" target="_blank">PDF</a>
+        <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.html" target="_blank">CVF</a>
+      </div>
     </div>
   </div>
 
