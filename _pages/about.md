@@ -187,6 +187,10 @@ function toggleAbstract(btn) {
 <div class="section-header"><h2>News</h2></div>
 <div class="news-list">
   <div class="news-item">
+    <div class="news-date">Jul 2026</div>
+    <div class="news-body"><strong>FPEdit</strong> accepted to <strong>COLM 2026</strong>.</div>
+  </div>
+  <div class="news-item">
     <div class="news-date">Jun 2026</div>
     <div class="news-body">Started as <strong>dots · Ace Top Intern</strong> at Xiaohongshu (RED), Shanghai.</div>
   </div>
@@ -299,7 +303,7 @@ function toggleAbstract(btn) {
   <div class="pub-item">
     <div class="pub-thumb"><img src="/images/pubs/fpedit.png" alt="FPEdit teaser"></div>
     <div class="pub-info">
-      <div class="pub-venue">arXiv 2025</div>
+      <div class="pub-venue">COLM 2026</div>
       <div class="pub-title">
         <a href="https://arxiv.org/abs/2508.02092" target="_blank">
           FPEdit: Robust LLM Fingerprinting through Localized Parameter Editing
