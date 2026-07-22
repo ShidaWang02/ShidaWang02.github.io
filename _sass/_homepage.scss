@@ -13,7 +13,7 @@ html { scroll-behavior: smooth; }
 body {
   color: var(--home-body);
   background: var(--home-paper);
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@ body {
 }
 .masthead__inner-wrap { max-width: 1400px; padding: .65rem .75rem; }
 .masthead__menu-item a { color: #686d72; font-size: .75rem; font-weight: 400; }
-.masthead__menu-item--lg a { color: var(--home-body); font-size: .82rem; font-weight: 700; }
+.masthead__menu-item--lg a { color: var(--home-body); font-family: Literata, Georgia, serif; font-size: .82rem; font-weight: 700; }
 .greedy-nav { background: transparent; }
 
 #main { max-width: 1400px; margin-top: 1rem; padding: 0 .75rem; }
@@ -63,7 +63,7 @@ img.author__avatar {
 .sidebar .author__name {
   margin: .65rem 0 0;
   color: var(--home-body);
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: Literata, Georgia, serif;
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -116,7 +116,7 @@ img.author__avatar {
 .page__content .academic-home {
   max-width: none;
   color: var(--home-body);
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -155,11 +155,11 @@ img.author__avatar {
   padding: 0;
   border: 0;
   color: var(--home-ink);
-  font-family: Caveat, "Comic Sans MS", cursive;
-  font-size: 1.5rem;
+  font-family: Literata, Georgia, serif;
+  font-size: 1.22rem;
   font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.15;
+  letter-spacing: -.018em;
+  line-height: 1.25;
   text-transform: none;
 }
 .academic-home .section-header h2::after,
@@ -268,6 +268,111 @@ img.author__avatar {
 .academic-home .tl-role { margin: .03rem 0; color: var(--home-ink); font-size: .7rem; font-weight: 700; }
 .academic-home .tl-org { color: #5f656a; font-size: .63rem; }
 
+.academic-home .internship-list { padding: .4rem .75rem; }
+.academic-home .internship-list .tl-item {
+  grid-template-columns: 108px 10px minmax(0, 1fr);
+  align-items: center;
+  gap: .7rem;
+  padding: .9rem .35rem;
+  border-top: 1px solid #eceae6;
+}
+.academic-home .internship-list .tl-item:first-child { border-top: 0; }
+.academic-home .internship-list .tl-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1.4rem;
+  row-gap: .12rem;
+  align-items: baseline;
+}
+.academic-home .internship-list .tl-period {
+  grid-column: 2;
+  grid-row: 1;
+  color: #686e73;
+  font: .66rem/1.35 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-align: right;
+  white-space: nowrap;
+}
+.academic-home .internship-list .tl-role {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.3;
+}
+.academic-home .internship-list .tl-org {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  font-size: .72rem;
+  line-height: 1.45;
+}
+.academic-home .tl-logo {
+  display: flex;
+  width: 104px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.academic-home .tl-logo img { display: block; max-width: 96px; max-height: 50px; object-fit: contain; }
+.academic-home .tl-logo--rednote img { width: 52px; height: 52px; border-radius: 11px; }
+.academic-home .tl-logo--tencent img { width: 96px; height: auto; }
+.academic-home .tl-logo--ustc img {
+  width: 62px;
+  height: 62px;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.academic-home .education-list {
+  display: grid;
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: .7rem;
+  margin: 0;
+  padding: .4rem .75rem;
+  border: 1px solid var(--home-line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .72);
+}
+.academic-home .education-badge { align-self: center; }
+.academic-home .education-items .tl-item {
+  grid-template-columns: 10px minmax(0, 1fr);
+  align-items: center;
+  gap: .7rem;
+  padding: .8rem .35rem;
+  border-top: 1px solid #eceae6;
+}
+.academic-home .education-items .tl-item:first-child { border-top: 0; }
+.academic-home .education-list .tl-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1.4rem;
+  row-gap: .12rem;
+  align-items: baseline;
+}
+.academic-home .education-list .tl-period {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: .62rem;
+  line-height: 1.35;
+  text-align: right;
+  white-space: nowrap;
+}
+.academic-home .education-list .tl-role {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1.35;
+}
+.academic-home .education-list .tl-org {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  font-size: .68rem;
+  line-height: 1.45;
+}
+
 .academic-home .awards { padding: .55rem .8rem; }
 .academic-home .award-row { display: grid; grid-template-columns: 44px 1fr; gap: .65rem; padding: .24rem 0; border: 0; }
 .academic-home .award-year { color: #6a7075; font: .57rem ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
@@ -291,6 +396,21 @@ img.author__avatar {
   .academic-home .pub-thumb { width: 100%; height: 180px; }
   .academic-home .pub-thumb img { width: 100%; height: 178px; }
   .academic-home .news-item { grid-template-columns: 58px 15px minmax(0, 1fr); gap: .28rem; }
+  .academic-home .internship-list .tl-item { grid-template-columns: 68px 8px minmax(0, 1fr); gap: .5rem; }
+  .academic-home .tl-logo { width: 64px; height: 52px; }
+  .academic-home .tl-logo--rednote img { width: 46px; height: 46px; border-radius: 10px; }
+  .academic-home .tl-logo--tencent img { width: 57px; }
+  .academic-home .tl-logo--ustc img { width: 50px; height: 50px; }
+  .academic-home .internship-list .tl-body { grid-template-columns: 1fr; row-gap: .08rem; }
+  .academic-home .internship-list .tl-period { grid-column: 1; grid-row: 1; text-align: left; }
+  .academic-home .internship-list .tl-role { grid-column: 1; grid-row: 2; }
+  .academic-home .internship-list .tl-org { grid-column: 1; grid-row: 3; }
+  .academic-home .education-list { grid-template-columns: 68px minmax(0, 1fr); gap: .5rem; }
+  .academic-home .education-items .tl-item { grid-template-columns: 8px minmax(0, 1fr); gap: .5rem; }
+  .academic-home .education-list .tl-body { grid-template-columns: 1fr; row-gap: .08rem; }
+  .academic-home .education-list .tl-period { grid-column: 1; grid-row: 1; text-align: left; }
+  .academic-home .education-list .tl-role { grid-column: 1; grid-row: 2; }
+  .academic-home .education-list .tl-org { grid-column: 1; grid-row: 3; }
 }
 
 @media (prefers-reduced-motion: reduce) {

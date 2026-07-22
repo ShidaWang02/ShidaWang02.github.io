@@ -86,7 +86,7 @@ author:
   location         : "Hefei, China"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?view_op=search_authors&mauthors=Shida+Wang+USTC"
   email            : "wangshida@mail.ustc.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :

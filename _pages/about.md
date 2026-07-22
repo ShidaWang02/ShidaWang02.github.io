@@ -19,7 +19,7 @@ redirect_from:
   --subtle: #fafbfc;
 }
 .academic-home {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--body);
   max-width: 820px;
   font-size: 16px;
@@ -260,27 +260,6 @@ function toggleAbstract(btn) {
     </div>
   </div>
 
-  <!-- TableMix -->
-  <div class="pub-item">
-    <div class="pub-thumb"><img src="/images/pubs/methods/tablemix-method.png" alt="TableMix method overview"></div>
-    <div class="pub-info">
-      <div class="pub-venue">CVPR 2026</div>
-      <div class="pub-title">
-        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.pdf" target="_blank">
-          TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
-        </a>
-      </div>
-      <div class="pub-authors">
-        Chaohu Liu, <span class="me">Shida Wang</span>, Yubo Wang, Linli Xu
-      </div>
-      <div class="pub-tldr">A data-centric augmentation strategy that boosts multimodal table reasoning in MLLMs.</div>
-      <div class="pub-links">
-        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.pdf" target="_blank">PDF</a>
-        <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.html" target="_blank">CVF</a>
-      </div>
-    </div>
-  </div>
-
   <!-- DiG -->
   <div class="pub-item">
     <div class="pub-thumb"><img src="/images/pubs/methods/dig-method.png" alt="DiG method overview"></div>
@@ -332,14 +311,62 @@ function toggleAbstract(btn) {
     </div>
   </div>
 
+  <!-- TableMix -->
+  <div class="pub-item">
+    <div class="pub-thumb"><img src="/images/pubs/methods/tablemix-method.png" alt="TableMix method overview"></div>
+    <div class="pub-info">
+      <div class="pub-venue">CVPR 2026</div>
+      <div class="pub-title">
+        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.pdf" target="_blank">
+          TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
+        </a>
+      </div>
+      <div class="pub-authors">
+        Chaohu Liu, <span class="me">Shida Wang</span>, Yubo Wang, Linli Xu
+      </div>
+      <div class="pub-tldr">A data-centric augmentation strategy that boosts multimodal table reasoning in MLLMs.</div>
+      <div class="pub-links">
+        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.pdf" target="_blank">PDF</a>
+        <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.html" target="_blank">CVF</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOCUS -->
+  <div class="pub-item">
+    <div class="pub-thumb"><img src="/images/pubs/methods/locus-method.png" alt="LOCUS method overview"></div>
+    <div class="pub-info">
+      <div class="pub-venue">arXiv 2026</div>
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2606.16586" target="_blank">
+          LOCUS: Local Visual Cue Search for Enhancing Fine-Grained Perception in Multimodal Large Language Models
+        </a>
+      </div>
+      <div class="pub-authors">
+        Zhou Tao*, Fang Zhang*, Zewen Ding, <span class="me">Shida Wang</span>, Xiaokun Sun, YongXiang Hua, Haoyu Cao, Linli Xu
+        <span style="color:var(--muted);">(* equal contribution)</span>
+      </div>
+      <div class="pub-tldr">Training-time local visual cue search teaches MLLMs to find fine-grained evidence without changing inference.</div>
+      <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
+      <div class="pub-abstract">
+        <strong>LOCUS</strong> addresses visual context rot, where decisive local evidence is present in a high-resolution image but becomes difficult to select among redundant visual context. During training, a cropped region serves as a visual cue and the model learns to recover its location in the full image through an IoU-based reward. The cue is removed at test time, so the model retains the standard image-question interface while improving fine-grained perception and localization-sensitive understanding.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2606.16586" target="_blank">arXiv</a>
+        <a href="https://arxiv.org/pdf/2606.16586" target="_blank">PDF</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 </section>
 
 <!-- ═══════════════ INTERNSHIPS ═══════════════ -->
-<section class="home-card">
+<section class="home-card internships-card">
 <div class="section-header" id="experience"><h2>Internships</h2></div>
-<div class="tl">
+<div class="tl internship-list">
   <div class="tl-item">
+    <div class="tl-logo tl-logo--rednote"><img src="/images/companies/rednote.jpg" alt="RedNote logo"></div>
     <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
     <div class="tl-body">
       <div class="tl-period">June 2026 – Present</div>
@@ -348,6 +375,7 @@ function toggleAbstract(btn) {
     </div>
   </div>
   <div class="tl-item">
+    <div class="tl-logo tl-logo--tencent"><img src="/images/companies/tencent.png" alt="Tencent logo"></div>
     <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
     <div class="tl-body">
       <div class="tl-period">Oct. 2025 – May 2026</div>
@@ -361,29 +389,32 @@ function toggleAbstract(btn) {
 <!-- ═══════════════ EDUCATION ═══════════════ -->
 <section class="home-card">
 <div class="section-header"><h2>Education</h2></div>
-<div class="tl">
-  <div class="tl-item">
-    <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
-    <div class="tl-body">
-      <div class="tl-period">Sept. 2024 – Present</div>
-      <div class="tl-role">M.S. in Artificial Intelligence</div>
-      <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei</div>
+<div class="education-list">
+  <div class="education-badge tl-logo tl-logo--ustc"><img src="/images/schools/ustc.png" alt="USTC emblem"></div>
+  <div class="education-items">
+    <div class="tl-item">
+      <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
+      <div class="tl-body">
+        <div class="tl-period">Sept. 2024 – Present</div>
+        <div class="tl-role">M.S. in Artificial Intelligence</div>
+        <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei</div>
+      </div>
     </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
-    <div class="tl-body">
-      <div class="tl-period">Sept. 2021 – July 2024</div>
-      <div class="tl-role">B.S. in Artificial Intelligence</div>
-      <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei</div>
+    <div class="tl-item">
+      <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
+      <div class="tl-body">
+        <div class="tl-period">Sept. 2021 – July 2024</div>
+        <div class="tl-role">B.S. in Artificial Intelligence</div>
+        <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Artificial Intelligence and Data Science, Hefei</div>
+      </div>
     </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
-    <div class="tl-body">
-      <div class="tl-period">Sept. 2020 – July 2021</div>
-      <div class="tl-role">B.S. in Management (transferred)</div>
-      <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Management, Hefei</div>
+    <div class="tl-item">
+      <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
+      <div class="tl-body">
+        <div class="tl-period">Sept. 2020 – July 2021</div>
+        <div class="tl-role">B.S. in Management (transferred)</div>
+        <div class="tl-org"><a href="https://www.ustc.edu.cn/" target="_blank">USTC</a> · School of Management, Hefei</div>
+      </div>
     </div>
   </div>
 </div>
