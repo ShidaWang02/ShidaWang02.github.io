@@ -10,7 +10,7 @@
 title                    : "Shida Wang"
 title_separator          : "-"
 name                     : &name "Shida Wang"
-description              : &description "I can do all things."
+description              : &description "Shida Wang — researcher in multimodal large language models, efficient video understanding, and trustworthy AI."
 url                      : https://ShidaWang02.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ShidaWang02/ShidaWang02.github.io"
