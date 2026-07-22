@@ -106,7 +106,7 @@ img.author__avatar {
   transition: color .15s ease, border-color .15s ease;
 }
 .author__urls li:first-child { grid-column: 1 / -1; }
-.author__urls li:last-child:nth-child(odd) { grid-column: auto; }
+.author__urls li:last-child { grid-column: 1 / -1; }
 .author__urls li > i { margin-right: .2rem; }
 .author__urls a { display: inline; min-height: 0; margin: 0; padding: 0; border: 0; color: inherit; background: transparent; text-decoration: none; }
 .author__urls li:hover { color: var(--home-accent); border-color: #9fb4d6; }
