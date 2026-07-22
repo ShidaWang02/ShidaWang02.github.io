@@ -8,6 +8,160 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+/* ── Palette & base ──────────────────────────────────────────── */
+:root {
+  --ink:    #1a1a1a;
+  --body:   #3f3f46;
+  --muted:  #9094a0;
+  --accent: #3949ab;
+  --line:   #ececf0;
+  --subtle: #fafbfc;
+}
+.academic-home {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  color: var(--body);
+  max-width: 820px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.academic-home a { color: var(--accent); text-decoration: none; }
+.academic-home a:hover { text-decoration: underline; }
+
+/* ── Section headers ─────────────────────────────────────────── */
+.section-header { margin: 2.6em 0 1.1em 0; }
+.section-header h2 {
+  font-size: 0.74em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+  padding-bottom: 0.7em;
+  border: none;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ── Bio ─────────────────────────────────────────────────────── */
+.bio-block { color: var(--body); padding: 0.4em 0 0.2em 0; }
+.bio-block strong { color: var(--ink); font-weight: 650; }
+
+/* ── News ────────────────────────────────────────────────────── */
+.news-list { margin-top: 0.3em; }
+.news-item { display: flex; gap: 1em; padding: 0.4em 0; font-size: 0.92em; }
+.news-date {
+  color: var(--muted);
+  min-width: 82px;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+.news-body { color: var(--body); }
+.news-body strong { color: var(--ink); font-weight: 650; }
+
+/* ── Research interests ──────────────────────────────────────── */
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.55em; margin-top: 0.2em; }
+.tag {
+  font-size: 0.84em;
+  padding: 0.34em 0.9em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--body);
+  background: var(--subtle);
+}
+
+/* ── Publications (thumbnail + info, two-column) ─────────────── */
+.pub-item {
+  display: flex;
+  gap: 1.25em;
+  align-items: flex-start;
+  padding: 1.4em 0;
+  border-top: 1px solid var(--line);
+}
+.pub-item:first-child { border-top: none; padding-top: 0.4em; }
+.pub-thumb {
+  width: 168px;
+  flex-shrink: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--subtle);
+}
+.pub-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pub-thumb.ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #eef1fb, #f7f8fc);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.92em;
+  letter-spacing: 0.04em;
+}
+.pub-info { flex: 1; min-width: 0; }
+.pub-venue {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.25em;
+}
+.pub-title {
+  font-size: 1em;
+  font-weight: 650;
+  color: var(--ink);
+  line-height: 1.5;
+  margin: 0 0 0.3em 0;
+}
+.pub-title a { color: inherit; }
+.pub-title a:hover { color: var(--accent); }
+.pub-authors { font-size: 0.9em; color: var(--body); margin-bottom: 0.15em; }
+.pub-authors .me { font-weight: 700; color: var(--ink); }
+.pub-tldr { font-size: 0.86em; color: var(--muted); font-style: italic; margin-top: 0.1em; }
+.pub-abstract-toggle {
+  font-size: 0.82em; color: var(--accent); cursor: pointer;
+  background: none; border: none; padding: 0; margin-top: 0.45em; font-family: inherit;
+}
+.pub-abstract-toggle:hover { text-decoration: underline; }
+.pub-abstract {
+  display: none;
+  font-size: 0.88em; color: var(--body); line-height: 1.7;
+  border-left: 2px solid var(--line); padding: 0.3em 0 0.3em 1em; margin: 0.6em 0 0.2em 0;
+}
+.pub-abstract.open { display: block; }
+.pub-abstract strong { color: var(--ink); }
+.pub-links { display: flex; flex-wrap: wrap; gap: 1em; margin-top: 0.55em; }
+.pub-links a { font-size: 0.84em; font-weight: 600; }
+
+/* ── Timeline (education + internships) ──────────────────────── */
+.tl { margin-top: 0.4em; }
+.tl-item { display: flex; gap: 1em; padding-bottom: 1.3em; }
+.tl-item:last-child { padding-bottom: 0.2em; }
+.tl-rail { display: flex; flex-direction: column; align-items: center; padding-top: 0.5em; }
+.tl-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+.tl-line { width: 1px; flex: 1; min-height: 26px; background: var(--line); margin-top: 6px; }
+.tl-item:last-child .tl-line { display: none; }
+.tl-body { flex: 1; }
+.tl-period { font-size: 0.8em; color: var(--muted); }
+.tl-role { font-size: 0.96em; font-weight: 650; color: var(--ink); margin: 0.05em 0; }
+.tl-org { font-size: 0.88em; color: var(--body); }
+
+/* ── Awards ──────────────────────────────────────────────────── */
+.award-row { display: flex; align-items: baseline; gap: 1em; padding: 0.6em 0; border-top: 1px solid var(--line); }
+.award-row:first-child { border-top: none; }
+.award-year { font-size: 0.82em; color: var(--muted); min-width: 38px; flex-shrink: 0; }
+.award-name { font-size: 0.92em; color: var(--body); line-height: 1.5; }
+.award-name .top { color: var(--accent); font-weight: 700; }
+
+@media (max-width: 600px) {
+  .academic-home { font-size: 15px; }
+  .pub-item { flex-direction: column; gap: 0.8em; }
+  .pub-thumb { width: 100%; max-width: 280px; }
+}
+</style>
+
 <script>
 function toggleAbstract(btn) {
   var abs = btn.nextElementSibling;
@@ -17,17 +171,6 @@ function toggleAbstract(btn) {
 </script>
 
 <div class="academic-home">
-
-<header class="home-intro">
-  <div class="home-kicker">Multimodal Intelligence · Efficient &amp; Trustworthy AI</div>
-  <h1>Shida Wang<span>.</span></h1>
-  <p class="home-lede">I build efficient and trustworthy vision–language systems, with a focus on video understanding, adaptive token compression, and model security.</p>
-  <nav class="home-actions" aria-label="Profile links">
-    <a href="#publications">Selected work</a>
-    <a href="mailto:wangshida@mail.ustc.edu.cn">Email</a>
-    <a href="https://github.com/ShidaWang02" target="_blank" rel="noopener">GitHub</a>
-  </nav>
-</header>
 
 <!-- ═══════════════ BIO ═══════════════ -->
 <div class="bio-block">
@@ -80,7 +223,7 @@ function toggleAbstract(btn) {
 </div>
 
 <!-- ═══════════════ PUBLICATIONS ═══════════════ -->
-<div class="section-header" id="publications"><h2>Selected Publications</h2></div>
+<div class="section-header"><h2>Publications</h2></div>
 <div class="pub-list">
 
   <!-- SCORE -->
