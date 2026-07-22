@@ -172,6 +172,21 @@ function toggleAbstract(btn) {
 
 <div class="academic-home">
 
+<section class="home-intro" id="about-me">
+  <div class="home-eyebrow">Hello / 你好</div>
+  <h1>I build efficient and trustworthy multimodal intelligence.</h1>
+  <p>
+    I am <strong>Shida Wang (王世炟)</strong>, an M.S. student at the
+    <a href="http://sds.ustc.edu.cn/main.htm" target="_blank">School of Artificial Intelligence and Data Science</a>,
+    <a href="https://www.ustc.edu.cn/" target="_blank">USTC</a>, advised by
+    <a href="http://staff.ustc.edu.cn/~linlixu/" target="_blank">Prof. Linli Xu</a>.
+    My work studies how vision-language models can understand long-form visual information with less computation and greater reliability.
+  </p>
+  <div class="research-line" aria-label="Research interests">
+    <span>multimodal-llms</span><span>video-understanding</span><span>token-compression</span><span>llm-security</span>
+  </div>
+</section>
+
 <!-- ═══════════════ BIO ═══════════════ -->
 <div class="bio-block">
   I am <strong>Shida Wang (王世炟)</strong>, an M.S. student at the
@@ -184,51 +199,41 @@ function toggleAbstract(btn) {
 </div>
 
 <!-- ═══════════════ NEWS ═══════════════ -->
-<div class="section-header"><h2>News</h2></div>
+<div class="section-header" id="news"><h2>News</h2></div>
 <div class="news-list">
   <div class="news-item">
     <div class="news-date">Jul 2026</div>
-    <div class="news-body"><strong>FPEdit</strong> accepted to <strong>COLM 2026</strong>.</div>
+    <span class="news-emoji" aria-hidden="true">🎉</span><div class="news-body"><strong>FPEdit</strong> accepted to <strong>COLM 2026</strong>.</div>
   </div>
   <div class="news-item">
     <div class="news-date">Jun 2026</div>
-    <div class="news-body">Started as <strong>dots · Ace Top Intern</strong> at Xiaohongshu (RED), Shanghai.</div>
+    <span class="news-emoji" aria-hidden="true">🚀</span><div class="news-body">Started as <strong>dots · Ace Top Intern</strong> at RedNote, Shanghai.</div>
   </div>
   <div class="news-item">
     <div class="news-date">Mar 2026</div>
-    <div class="news-body">Released <strong>SCORE</strong> (Dynamic Token Compression for video) on arXiv.</div>
+    <span class="news-emoji" aria-hidden="true">📄</span><div class="news-body">Released <strong>SCORE</strong> (Dynamic Token Compression for video) on arXiv.</div>
   </div>
   <div class="news-item">
     <div class="news-date">Feb 2026</div>
-    <div class="news-body">Two papers (<strong>TableMix</strong>, <strong>DiG</strong>) accepted to <strong>CVPR 2026</strong>.</div>
+    <span class="news-emoji" aria-hidden="true">🎉</span><div class="news-body">Two papers (<strong>TableMix</strong>, <strong>DiG</strong>) accepted to <strong>CVPR 2026</strong>.</div>
   </div>
   <div class="news-item">
     <div class="news-date">Oct 2025</div>
-    <div class="news-body">Joined <strong>Tencent Youtu Lab</strong> as a Research Intern.</div>
+    <span class="news-emoji" aria-hidden="true">🚀</span><div class="news-body">Joined <strong>Tencent Youtu Lab</strong> as a Research Intern.</div>
   </div>
   <div class="news-item">
     <div class="news-date">Aug 2025</div>
-    <div class="news-body">Released <strong>FPEdit</strong> (robust LLM fingerprinting) on arXiv.</div>
+    <span class="news-emoji" aria-hidden="true">📄</span><div class="news-body">Released <strong>FPEdit</strong> (robust LLM fingerprinting) on arXiv.</div>
   </div>
 </div>
 
-<!-- ═══════════════ RESEARCH INTERESTS ═══════════════ -->
-<div class="section-header"><h2>Research Interests</h2></div>
-<div class="tag-row">
-  <span class="tag">Multimodal LLMs</span>
-  <span class="tag">Video Understanding</span>
-  <span class="tag">Token Compression</span>
-  <span class="tag">Efficient Inference</span>
-  <span class="tag">LLM Security</span>
-</div>
-
 <!-- ═══════════════ PUBLICATIONS ═══════════════ -->
-<div class="section-header"><h2>Publications</h2></div>
+<div class="section-header" id="publications"><h2>Selected Publications</h2></div>
 <div class="pub-list">
 
   <!-- SCORE -->
   <div class="pub-item">
-    <div class="pub-thumb"><img src="/images/pubs/score.png" alt="SCORE teaser"></div>
+    <div class="pub-thumb"><img src="/images/pubs/methods/score-method.png" alt="SCORE method overview"></div>
     <div class="pub-info">
       <div class="pub-venue">arXiv 2026</div>
       <div class="pub-title">
@@ -254,7 +259,7 @@ function toggleAbstract(btn) {
 
   <!-- TableMix -->
   <div class="pub-item">
-    <div class="pub-thumb ph">CVPR<br>2026</div>
+    <div class="pub-thumb"><img src="/images/pubs/methods/tablemix-method.png" alt="TableMix method overview"></div>
     <div class="pub-info">
       <div class="pub-venue">CVPR 2026</div>
       <div class="pub-title">
@@ -275,7 +280,7 @@ function toggleAbstract(btn) {
 
   <!-- DiG -->
   <div class="pub-item">
-    <div class="pub-thumb"><img src="/images/pubs/dig.png" alt="DiG teaser"></div>
+    <div class="pub-thumb"><img src="/images/pubs/methods/dig-method.png" alt="DiG method overview"></div>
     <div class="pub-info">
       <div class="pub-venue">CVPR 2026</div>
       <div class="pub-title">
@@ -301,7 +306,7 @@ function toggleAbstract(btn) {
 
   <!-- FPEdit -->
   <div class="pub-item">
-    <div class="pub-thumb"><img src="/images/pubs/fpedit.png" alt="FPEdit teaser"></div>
+    <div class="pub-thumb"><img src="/images/pubs/methods/fpedit-method.png" alt="FPEdit method overview"></div>
     <div class="pub-info">
       <div class="pub-venue">COLM 2026</div>
       <div class="pub-title">
@@ -327,14 +332,14 @@ function toggleAbstract(btn) {
 </div>
 
 <!-- ═══════════════ INTERNSHIPS ═══════════════ -->
-<div class="section-header"><h2>Internships</h2></div>
+<div class="section-header" id="experience"><h2>Internships</h2></div>
 <div class="tl">
   <div class="tl-item">
     <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
     <div class="tl-body">
       <div class="tl-period">June 2026 – Present</div>
       <div class="tl-role">dots · Ace Top Intern</div>
-      <div class="tl-org">Xiaohongshu (RED) · Shanghai, China</div>
+      <div class="tl-org">RedNote · Shanghai, China</div>
     </div>
   </div>
   <div class="tl-item">
