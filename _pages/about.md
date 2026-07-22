@@ -172,7 +172,7 @@ function toggleAbstract(btn) {
 
 <div class="academic-home">
 
-<section class="home-intro home-card" id="about-me">
+<section class="home-intro" id="about-me">
   <div class="home-eyebrow">Hello / 你好</div>
   <h1>I build efficient and trustworthy multimodal intelligence.</h1>
   <p>
