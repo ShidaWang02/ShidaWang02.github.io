@@ -172,7 +172,7 @@ function toggleAbstract(btn) {
 
 <div class="academic-home">
 
-<section class="home-intro" id="about-me">
+<section class="home-intro home-card" id="about-me">
   <div class="home-eyebrow">Hello / 你好</div>
   <h1>I build efficient and trustworthy multimodal intelligence.</h1>
   <p>
@@ -199,6 +199,7 @@ function toggleAbstract(btn) {
 </div>
 
 <!-- ═══════════════ NEWS ═══════════════ -->
+<section class="home-card news-card">
 <div class="section-header" id="news"><h2>News</h2></div>
 <div class="news-list">
   <div class="news-item">
@@ -226,8 +227,10 @@ function toggleAbstract(btn) {
     <span class="news-emoji" aria-hidden="true">📄</span><div class="news-body">Released <strong>FPEdit</strong> (robust LLM fingerprinting) on arXiv.</div>
   </div>
 </div>
+</section>
 
 <!-- ═══════════════ PUBLICATIONS ═══════════════ -->
+<section class="home-card">
 <div class="section-header" id="publications"><h2>Selected Publications</h2></div>
 <div class="pub-list">
 
@@ -330,8 +333,10 @@ function toggleAbstract(btn) {
   </div>
 
 </div>
+</section>
 
 <!-- ═══════════════ INTERNSHIPS ═══════════════ -->
+<section class="home-card">
 <div class="section-header" id="experience"><h2>Internships</h2></div>
 <div class="tl">
   <div class="tl-item">
@@ -351,8 +356,10 @@ function toggleAbstract(btn) {
     </div>
   </div>
 </div>
+</section>
 
 <!-- ═══════════════ EDUCATION ═══════════════ -->
+<section class="home-card">
 <div class="section-header"><h2>Education</h2></div>
 <div class="tl">
   <div class="tl-item">
@@ -380,8 +387,10 @@ function toggleAbstract(btn) {
     </div>
   </div>
 </div>
+</section>
 
 <!-- ═══════════════ HONORS & AWARDS ═══════════════ -->
+<section class="home-card">
 <div class="section-header"><h2>Honors &amp; Awards</h2></div>
 <div class="awards">
   <div class="award-row">
@@ -409,5 +418,6 @@ function toggleAbstract(btn) {
     <span class="award-name">Second Prize, China Chemistry Olympiad (Preliminary Round), Jilin Province</span>
   </div>
 </div>
+</section>
 
 </div>
