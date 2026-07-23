@@ -423,9 +423,9 @@ function toggleAbstract(btn) {
 
 <!-- ═══════════════ ACADEMIC SERVICE ═══════════════ -->
 <section class="home-card">
-<div class="section-header"><h2>Academic Service</h2></div>
+<div class="section-header"><h2>Services</h2></div>
 <div class="awards">
-  <div class="award-name">COLM 2026 Conference Reviewer · AAAI 2027 Conference Program Committee</div>
+  <div class="award-name"><strong>Reviewer:</strong> COLM 2026, AAAI 2027</div>
 </div>
 </section>
 
