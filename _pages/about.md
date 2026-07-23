@@ -282,6 +282,7 @@ function toggleAbstract(btn) {
       <div class="pub-links">
         <a href="https://arxiv.org/abs/2512.12633" target="_blank">arXiv</a>
         <a href="https://arxiv.org/pdf/2512.12633" target="_blank">PDF</a>
+        <a href="https://github.com/gulizhoutao/DiG" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
