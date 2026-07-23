@@ -238,7 +238,7 @@ function toggleAbstract(btn) {
   <div class="pub-item">
     <div class="pub-thumb"><img src="/images/pubs/methods/score-method.png" alt="SCORE method overview"></div>
     <div class="pub-info">
-      <div class="pub-venue">arXiv 2026</div>
+      <div class="pub-venue pub-venue--arxiv">arXiv 2026</div>
       <div class="pub-title">
         <a href="https://arxiv.org/abs/2603.26365" target="_blank">
           Dynamic Token Compression for Efficient Video Understanding through Reinforcement Learning
@@ -264,7 +264,7 @@ function toggleAbstract(btn) {
   <div class="pub-item">
     <div class="pub-thumb"><img src="/images/pubs/methods/dig-method.png" alt="DiG method overview"></div>
     <div class="pub-info">
-      <div class="pub-venue">CVPR 2026</div>
+      <div class="pub-venue pub-venue--cvpr">CVPR 2026</div>
       <div class="pub-title">
         <a href="https://arxiv.org/abs/2512.12633" target="_blank">
           DiG: Differential Grounding for Enhancing Fine-Grained Perception in Multimodal Large Language Model
@@ -290,7 +290,7 @@ function toggleAbstract(btn) {
   <div class="pub-item">
     <div class="pub-thumb"><img src="/images/pubs/methods/fpedit-method.png" alt="FPEdit method overview"></div>
     <div class="pub-info">
-      <div class="pub-venue">COLM 2026</div>
+      <div class="pub-venue pub-venue--colm">COLM 2026</div>
       <div class="pub-title">
         <a href="https://arxiv.org/abs/2508.02092" target="_blank">
           FPEdit: Robust LLM Fingerprinting through Localized Parameter Editing
@@ -315,7 +315,7 @@ function toggleAbstract(btn) {
   <div class="pub-item">
     <div class="pub-thumb"><img src="/images/pubs/methods/tablemix-method.png" alt="TableMix method overview"></div>
     <div class="pub-info">
-      <div class="pub-venue">CVPR 2026</div>
+      <div class="pub-venue pub-venue--cvpr">CVPR 2026</div>
       <div class="pub-title">
         <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_TableMix_Enhancing_Multimodal_Table_Reasoning_in_MLLMs_from_a_Data-Centric_CVPR_2026_paper.pdf" target="_blank">
           TableMix: Enhancing Multimodal Table Reasoning in MLLMs from a Data-Centric Perspective
@@ -336,7 +336,7 @@ function toggleAbstract(btn) {
   <div class="pub-item">
     <div class="pub-thumb"><img src="/images/pubs/methods/locus-method.png" alt="LOCUS method overview"></div>
     <div class="pub-info">
-      <div class="pub-venue">arXiv 2026</div>
+      <div class="pub-venue pub-venue--arxiv">arXiv 2026</div>
       <div class="pub-title">
         <a href="https://arxiv.org/abs/2606.16586" target="_blank">
           LOCUS: Local Visual Cue Search for Enhancing Fine-Grained Perception in Multimodal Large Language Models
