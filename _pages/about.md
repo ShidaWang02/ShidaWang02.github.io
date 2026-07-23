@@ -425,14 +425,7 @@ function toggleAbstract(btn) {
 <section class="home-card">
 <div class="section-header"><h2>Academic Service</h2></div>
 <div class="awards">
-  <div class="award-row">
-    <span class="award-year">2027</span>
-    <span class="award-name"><a href="https://openreview.net/group?id=AAAI.org/2027/Conference/Program_Committee" target="_blank">AAAI 2027 Conference Program Committee</a></span>
-  </div>
-  <div class="award-row">
-    <span class="award-year">2026</span>
-    <span class="award-name"><a href="https://openreview.net/group?id=colmweb.org/COLM/2026/Conference/Reviewers" target="_blank">COLM 2026 Conference Reviewer</a></span>
-  </div>
+  <div class="award-name">COLM 2026 Conference Reviewer · AAAI 2027 Conference Program Committee</div>
 </div>
 </section>
 
