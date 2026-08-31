@@ -203,6 +203,10 @@ function toggleAbstract(btn) {
 <div class="section-header" id="news"><h2>News</h2></div>
 <div class="news-list">
   <div class="news-item">
+    <div class="news-date">Aug 2026</div>
+    <span class="news-emoji" aria-hidden="true">📄</span><div class="news-body">Released <strong>VISTA</strong> (verifier-informed on-policy self-distillation) on arXiv.</div>
+  </div>
+  <div class="news-item">
     <div class="news-date">Jul 2026</div>
     <span class="news-emoji" aria-hidden="true">🎉</span><div class="news-body"><strong>FPEdit</strong> accepted to <strong>COLM 2026</strong>.</div>
   </div>
@@ -355,6 +359,31 @@ function toggleAbstract(btn) {
       <div class="pub-links">
         <a href="https://arxiv.org/abs/2606.16586" target="_blank">arXiv</a>
         <a href="https://arxiv.org/pdf/2606.16586" target="_blank">PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VISTA -->
+  <div class="pub-item">
+    <div class="pub-thumb"><img src="/images/pubs/methods/vista-method.png" alt="VISTA method schematic"></div>
+    <div class="pub-info">
+      <div class="pub-venue pub-venue--arxiv">arXiv 2026</div>
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2608.28306" target="_blank">
+          VISTA: Verifier-Informed Student-to-Teacher Adaptation for On-Policy Self-Distillation
+        </a>
+      </div>
+      <div class="pub-authors">
+        Zewen Ding, Zezhong Wu, Zhou Tao, <span class="me">Shida Wang</span>, Shizhuo Hou, YongXiang Hua, Haoyu Cao, Linli Xu
+      </div>
+      <div class="pub-tldr">Outcome-verified student rollouts selectively adapt the privileged teacher, improving on-policy self-distillation without extra sampling.</div>
+      <button class="pub-abstract-toggle" onclick="toggleAbstract(this)">▸ Abstract</button>
+      <div class="pub-abstract">
+        Standard on-policy self-distillation trains a problem-only student from a privileged teacher that also observes a reference solution, but assumes the teacher is always the better token-level target. <strong>VISTA</strong> preserves the standard student update while using successful, outcome-verified student rollouts to adapt the teacher at the positions with the largest teacher–student KL divergence. It reuses the original rollout and loss without additional sampling or a separate reward objective, and improves reasoning performance over standard OPSD across Qwen3 models at 1.7B, 4B, and 8B scales on AIME24, AIME25, and HMMT25.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2608.28306" target="_blank">arXiv</a>
+        <a href="https://arxiv.org/pdf/2608.28306" target="_blank">PDF</a>
       </div>
     </div>
   </div>
