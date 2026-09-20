@@ -203,6 +203,10 @@ function toggleAbstract(btn) {
 <div class="section-header" id="news"><h2>News</h2></div>
 <div class="news-list">
   <div class="news-item">
+    <div class="news-date">Sep 2026</div>
+    <span class="news-emoji" aria-hidden="true">🚀</span><div class="news-body">Released <a href="https://studio.dots.ai/dots/dots3-en.html" target="_blank"><strong>dots3-note preview</strong></a>, the first open-weight model in the dots3 family. <a href="https://github.com/studio-dots-ai/dots3-note-prev" target="_blank">GitHub</a></div>
+  </div>
+  <div class="news-item">
     <div class="news-date">Aug 2026</div>
     <span class="news-emoji" aria-hidden="true">📄</span><div class="news-body">Released <strong>VISTA</strong> (verifier-informed on-policy self-distillation) on arXiv.</div>
   </div>
